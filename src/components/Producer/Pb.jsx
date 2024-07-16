@@ -1,8 +1,12 @@
+"use client"
+import { useRouter } from 'next/navigation';
 import React from 'react'
 
 const Pb = () => {
+    const router = useRouter();
+
   return (
-<div className='flex flex-col md:flex-row md:justify-between px-8 md:px-36 w-full h-full '>
+<div className='flex flex-col md:flex-row md:justify-between md:mt-0 mt-28 px-8 md:px-36 w-full h-full '>
         <div className=' flex flex-col items-center md:items-start gap-5 md:px-10 py-10 text-white rounded-xl font-semibold text-lg  text-center'>
            
             <h1 className='pb text-3xl md:text-6xl font-semibold'>
@@ -11,7 +15,7 @@ const Pb = () => {
             Productions 
                 </h1>
                
-            <button className='bg-white p-5 md:px-10 cursor-pointer rounded-[35px] uppercase font-semibold  text-black  '>Shop Our Music</button>
+            <button className='bg-white px-7 py-3 md:px-10  cursor-pointer rounded-[35px] uppercase font-semibold  text-black  ' onClick={()=> router.push("/shop")}  >Shop Our Music</button>
 
      
 

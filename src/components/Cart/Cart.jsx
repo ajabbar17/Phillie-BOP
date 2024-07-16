@@ -21,10 +21,13 @@ const CartItem = ({ item }) => {
                 ? { ...cartItem, quantity: cartItem.quantity - 1 } 
                 : cartItem
         ));
+
     };
 
     const removeItem = () => {
         setCart(cart.filter(cartItem => cartItem.name !== item.name));
+
+
     };
 
     return (
@@ -66,7 +69,7 @@ const Cart = () => {
 
   useEffect(() => {
       // Save the cart to local storage whenever it changes
-      if (cart.length > 0) {
+      if (cart.length >0) {
         
         localStorage.setItem('cart', JSON.stringify(cart));
       }
@@ -80,14 +83,14 @@ const Cart = () => {
   };
 
   return (
-      <div className="flex flex-col md:flex-row justify-between px-10 ps-28 py-10">
+      <div className="flex flex-col md:flex-row justify-between px-10  md:ps-28 py-10">
           <div className="w-full md:w-3/5">
-              <h1 className="text-6xl pb mb-6">Your Cart</h1>
+              <h1 className="text-4xl md:text-6xl pb mb-6">Your Cart</h1>
               {cart.length === 0 ? (
                   <p className="text-white">Your cart is empty</p>
               ) : (
                   cart.map(item => (
-                      <CartItem key={item.id} item={item} />
+                      <CartItem key={item.name} item={item} />
                   ))
               )}
           </div>
@@ -109,7 +112,6 @@ const Cart = () => {
                   <span className="font-bold">Total Price</span>
                   <span className="pb font-semibold">${subtotal.toFixed(2)}</span>
               </div>
-              <button className="w-full py-3 bg-white text-black font-bold rounded-full" onClick={test}>CHECKOUT</button>
           </div>
       </div>
   );

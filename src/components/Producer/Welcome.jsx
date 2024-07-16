@@ -1,9 +1,10 @@
 import React from 'react'
 
 const Welcome = () => {
+  
   return (
-    <div className='flex justify-center items-center min-w-full h-screen bg-[#1E1E1E]'>
-    <div className='flex flex-col  gap-10 w-full text-center px-4 md:mt-0 mt-10 ' >
+    <div className='flex justify-center md:items-center min-w-full md:mb-0 mb-28 bg-[#1E1E1E]'>
+    <div className='flex flex-col  gap-10 w-full text-center px-16 md:px-4 md:mt-0 mt-10 ' >
     <p className='text-2xl text-[#D3D3D3]  font-normal'>
         WELCOME TO
 </p>
@@ -17,7 +18,6 @@ const Welcome = () => {
 
      </p>
 
-       <button className='bg-white p-5 px-10 cursor-pointer rounded-[35px] uppercase font-semibold self-center  '>Explore Music</button>
 
 
     </div >

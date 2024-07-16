@@ -18,13 +18,13 @@ const About = () => {
                 he is self-taught, and began playing professionally at the tender age of 15.</p>
 
 
-                <p className='font-light leading-8 text-base md:mb-5'>His musical influences are expansive and span over a few decades ranging from classic soul, 
+                <p className='font-light leading-8 text-base md:mb-5 visible'>His musical influences are expansive and span over a few decades ranging from classic soul, 
                     big band music, jazz, R&B, and jazz fusion. Bennie&apos;s arrangements are pure and powerful, leaving a melody imprinted indelibly in the minds 
                     of listeners. Bennie Pearce has a unique sound destined to create a new level of quality in a music with no genre confines. 
                     Bennie is a member of the American Society of Composers and Publishers (ASCAP).
                      He is an independent publisher under Phillie-BOP Music.</p>
 
-                    <p className='font-light leading-8 text-base'>
+                    <p className='font-light leading-8 text-base visible'>
                     In 2020, Phillie-BOP Productions launched its first international release, “Worthy” a debut hit single with independent singer/songwriter 
                     Rina Chanel. Follow-on hits included “More Than Enough,” “Made,” “Sweetest of Melody,” “E.S.P.” and “Je Ne Sais Quoi,” all #1 on various 
                     digital radio platform charts, 

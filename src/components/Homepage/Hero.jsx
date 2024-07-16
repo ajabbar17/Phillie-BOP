@@ -1,7 +1,10 @@
+"use client"
 import Image from 'next/image'
+import { useRouter } from 'next/navigation'
 import React from 'react'
 
 const Hero = () => {
+const router = useRouter();
   return (
     <div className='relative h-max md:h-full py-16  md:py-0'>
        <img src="https://www.philliebopmusic.com/imgs/home/new-one-image.png" className='w-full scale-100' alt="" />
@@ -15,7 +18,7 @@ const Hero = () => {
 
         </p>
 
-          <button className='bg-white p-5 md:px-10 cursor-pointer rounded-[35px] uppercase font-semibold self-center  '>Explore Music</button>
+          <button className='bg-white py-3 px-5 md:px-10 cursor-pointer rounded-[35px] uppercase font-semibold self-center  'onClick={()=> router.push("/shop")} >Explore Music</button>
 
 
        </div >
