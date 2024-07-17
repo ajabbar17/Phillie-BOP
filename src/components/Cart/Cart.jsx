@@ -59,27 +59,14 @@ const CartItem = ({ item }) => {
 const Cart = () => {
   const { cart, setCart } = useCart();
 
-  useEffect(() => {
-      // Retrieve the cart from local storage when the component mounts
-      const storedCart = localStorage.getItem('cart');
-      if (storedCart) {
-          setCart(JSON.parse(storedCart));
-      }
-  }, [setCart]);
 
-  useEffect(() => {
-      // Save the cart to local storage whenever it changes
-      if (cart.length >0) {
-        
-        localStorage.setItem('cart', JSON.stringify(cart));
-      }
-  }, [cart]);
+
+
 
   const subtotal = cart.reduce((acc, item) => acc + item.price * item.quantity, 0);
 
   const test = () => {
       console.log(cart);
-      console.log(localStorage)
   };
 
   return (
